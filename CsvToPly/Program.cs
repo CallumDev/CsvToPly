@@ -227,9 +227,9 @@ namespace CsvToPly
                     if (indexNX != -1)
                     {
                         if(yUp)
-                            writer.Write("{0} {1} {2}", vtx.NX, vtx.NY, vtx.NZ);
+                            writer.Write(" {0} {1} {2}", vtx.NX, vtx.NY, vtx.NZ);
                         else
-                            writer.Write("{0} {1} {2}", vtx.NX, vtx.NZ, -vtx.NY);
+                            writer.Write(" {0} {1} {2}", vtx.NX, vtx.NZ, -vtx.NY);
                     }
                     if (indexDiffuse != -1)
                         writer.Write(" {0} {1} {2} {3}", vtx.Color.R, vtx.Color.G, vtx.Color.B, vtx.Color.A);
